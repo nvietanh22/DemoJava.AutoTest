@@ -1,4 +1,4 @@
-package org.example;
+package demo.autotest;
 
 public class Main {
 
