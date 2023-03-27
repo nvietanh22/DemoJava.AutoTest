@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class DemoLogin {
     public static void main(String[] args){
@@ -13,7 +14,7 @@ public class DemoLogin {
         System.setProperty("webdriver.chrome.driver", "E:\\Auto-Test\\chromedriver_win32\\chromedriver.exe");
 
         //Tạo đối tươợng driver
-        WebDriver webDriver = new EdgeDriver();
+        WebDriver webDriver = new SafariDriver();
 
         //Điều hướng đến trang web
         webDriver.get("https://demoqa.com/login");
