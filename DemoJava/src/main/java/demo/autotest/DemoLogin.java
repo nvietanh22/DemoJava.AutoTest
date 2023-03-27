@@ -46,9 +46,9 @@ public class DemoLogin {
 
         try {
 
-            //định vị phần tử nút login trên web
+            //định vị phần tử nút logout trên web
             WebElement logoutBtn = webDriver.findElement(By.xpath("//div[@class='text-right col-md-5 col-sm-12']//button[@id='submit']"));
-            //Kiểm tra xem nút login có hiển thị hay ko
+            //Kiểm tra xem nút logout có hiển thị hay ko
             if(logoutBtn.isDisplayed()){
 
                 //Thực hiện thao tác trên nút
