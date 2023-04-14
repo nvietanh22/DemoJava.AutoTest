@@ -12,7 +12,7 @@ public class baiTapThucHanhAutoBai1 {
 
         //Khởi tạo browser với Chrome
         WebDriver driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver","/Users/minhhoa/Downloads/chromedriver_mac64/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/minhhoa/Downloads/chromedriver_mac64/chromedriver.exe");
 
 
         driver.get("https://demoqa.com/");
@@ -39,4 +39,5 @@ public class baiTapThucHanhAutoBai1 {
         driver.quit();
 
 
-}}
+    }
+}
