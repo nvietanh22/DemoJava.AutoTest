@@ -1,13 +1,15 @@
 package demo.autotest;
 
 import Initialization.Init;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 
 //Sử dụng extends để kế thừa các thuộc tính của class Init. Ví dụ, hàm Setup()
 public class Handle_RadioButton extends Init {
-    public static void main(String[] args) throws Exception {
+    @Test
+    public void test() throws Exception {
 
         //gọi hàm setup ra để sử dụng, tránh việc phải khai báo 1 dòng lệnh nhiều lần
         Setup();
