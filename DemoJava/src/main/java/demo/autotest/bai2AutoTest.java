@@ -28,15 +28,15 @@ public class bai2AutoTest extends Init {//khai bao init de tai su dung code
             System.out.println("Da click");
         }
         WebElement smoker = driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/span[1]/i[1]"));
-        if (!smoker.isSelected())
-        {
+        if (!smoker.isSelected()) {
             smoker.click();
             System.out.println("da click");
         }
 
         Select dropdown = new Select(driver.findElement(By.xpath("(//*[@class = \"oxd-select-text oxd-select-text--active\"])[2]")));
         dropdown.selectByVisibleText("Other");
-
+        Select nationality = new Select(driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]")));
+        nationality.selectByVisibleText("Taiwanese");
 
         TearDown();//goi ham tear down
         //=> luon phai goi set up va tear down khi tao class moi
